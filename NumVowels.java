@@ -29,7 +29,7 @@ public final class NumVowels {
       return 0;
     }
 
-  /**
+  /*
    * Convert string to uppercase to check easier.
    * prevents the usage of checking lower and upper
    * case vowels.
@@ -41,14 +41,14 @@ public final class NumVowels {
 
     // When the letter is a vowel
     if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
-    /**
-     * Calls the function and increments n by 1 for next letter 
+    /*
+     * Calls the function and increments n by 1 for next letter
      * And adds a 1 to count the vowel.
      */
       return 1 + recNumVowels(i, n - 1);
     } else {
       // When the letter isn't a vowel.
-      /**
+      /*
        * Calls the function and increments n by 1 for next letter
        * And adds a 0 so if the word has no
        * vowels it will. Be seen as so with a 0 and
