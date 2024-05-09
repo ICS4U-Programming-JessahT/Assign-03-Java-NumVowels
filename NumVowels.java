@@ -29,11 +29,11 @@ public final class NumVowels {
       return 0;
     }
 
-  /*
-   * Convert string to uppercase to check easier.
-   * prevents the usage of checking lower and upper
-   * case vowels.
-   */
+    /*
+     * Convert string to uppercase to check easier.
+     * prevents the usage of checking lower and upper
+     * case vowels.
+     */
     String uppercase = i.toUpperCase();
 
     // Checks a single character at "n" index point.
@@ -41,10 +41,10 @@ public final class NumVowels {
 
     // When the letter is a vowel
     if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
-    /*
-     * Calls the function and increments n by 1 for next letter
-     * And adds a 1 to count the vowel.
-     */
+      /*
+       * Calls the function and increments n by 1 for next letter
+       * And adds a 1 to count the vowel.
+       */
       return 1 + recNumVowels(i, n - 1);
     } else {
       // When the letter isn't a vowel.
@@ -84,9 +84,9 @@ public final class NumVowels {
     try {
       // Checks if theres a string on next line.
       while (input.hasNext()) {
-      /* Declare contents as string to pass to function.
-       * And read the current line.
-      */
+        /* Declare contents as string to pass to function.
+         * And read the current line.
+         */
         final String line = input.nextLine();
         // Checks if line is empty.
         if (line.length() > 0) {
