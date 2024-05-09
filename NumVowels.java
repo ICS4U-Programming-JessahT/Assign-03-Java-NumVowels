@@ -23,17 +23,17 @@ public final class NumVowels {
    * @param n Is the the index for character count
    * @return Returns by calling recursive function and 1 or 0 for vowels.
    */
-  public static int recNumVowels(String i, int n) {
+  public static int recNumVowels(final String i, final int n) {
     // base case for when the n reaches 0.
     if (n < 0) {
       return 0;
     }
 
-    /**
-     * Convert string to uppercase to check easier. 
-     * prevents the usage of checking lower and upper
-     * case vowels.
-     */
+  /**
+   * Convert string to uppercase to check easier.
+   * prevents the usage of checking lower and upper
+   * case vowels.
+   */
     String uppercase = i.toUpperCase();
 
     // Checks a single character at "n" index point.
@@ -41,16 +41,17 @@ public final class NumVowels {
 
     // When the letter is a vowel
     if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
-      /**
-       * Calls the function and increments n by 1 for next letter And adds a 1 to count the vowel.
-       */
+    /**
+     * Calls the function and increments n by 1 for next letter 
+     * And adds a 1 to count the vowel.
+     */
       return 1 + recNumVowels(i, n - 1);
     } else {
       // When the letter isn't a vowel.
       /**
-       * Calls the function and increments n by 1 for next letter 
+       * Calls the function and increments n by 1 for next letter
        * And adds a 0 so if the word has no
-       * vowels it will. Be seen as so with a 0 and 
+       * vowels it will. Be seen as so with a 0 and
        * not blank Trying to differentiate non vowels
        * words and empty lines.
        */
@@ -83,9 +84,9 @@ public final class NumVowels {
     try {
       // Checks if theres a string on next line.
       while (input.hasNext()) {
-        /** Declare contents as string to pass to function. 
-         * And read current line. 
-        */
+      /** Declare contents as string to pass to function.
+       * And read current line.
+      */
         final String line = input.nextLine();
         // Checks if line is empty.
         if (line.length() > 0) {
