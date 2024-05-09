@@ -84,8 +84,8 @@ public final class NumVowels {
     try {
       // Checks if theres a string on next line.
       while (input.hasNext()) {
-      /** Declare contents as string to pass to function.
-       * And read current line.
+      /* Declare contents as string to pass to function.
+       * And read the current line.
       */
         final String line = input.nextLine();
         // Checks if line is empty.
