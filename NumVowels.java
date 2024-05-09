@@ -47,13 +47,13 @@ public final class NumVowels {
        */
       return 1 + recNumVowels(i, n - 1);
     } else {
-      // When the letter isn't a vowel.
       /*
+       * When the letter isn't a vowel.
        * Calls the function and increments n by 1 for next letter
        * And adds a 0 so if the word has no
-       * vowels it will. Be seen as so with a 0 and
-       * not blank Trying to differentiate non vowels
-       * words and empty lines.
+       * Vowels it will. Be seen as so with a 0 and
+       * Not blank Trying to differentiate non vowels
+       * Words and empty lines.
        */
       return 0 + recNumVowels(i, n - 1);
     }
