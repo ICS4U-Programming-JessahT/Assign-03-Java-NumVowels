@@ -63,7 +63,7 @@ public final class NumVowels {
    * Main program.
    *
    * @param args Command-line arguments (not used in program).
-   * @throws IOException
+   * @throws IOException Throws IoException.
    */
 
   // Main program.
@@ -102,7 +102,7 @@ public final class NumVowels {
           output.write(line + "\n");
         }
       }
-    } catch (IOException e) {
+    } catch (IOException error) {
       // To check if there is no file
       System.out.println("No existing file.");
     }
